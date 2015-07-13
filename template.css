@@ -1,0 +1,158 @@
+
+/* In body, we can define the borders we give it. */
+body {
+	background-color: #C2C2C2;
+	
+}
+
+div.content {
+	/* Setting the margins.
+		The margin is the distance from each side to the neighboring element. */
+	margin-right: 20%;
+	margin-left: 20%;
+	/* Setting the padding.
+		It sets how much filling there will be around the text
+		in each headline. */
+	padding-top: 40px;
+	padding-right: 40px;
+	padding-left: 40px;
+	padding-bottom: 10px;
+
+	background-color: #FFFFFF;
+}
+
+div.top_bar {
+	margin-top: 10px;
+	
+	padding-right: 5%;
+	padding-left: 5%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	background-color: #FFFFFF;
+}
+
+div.top_menu {
+
+	margin-bottom: 10px;
+	
+}
+
+span.top_button_menu {
+	display: table;
+	margin: 0 auto;
+	width: 60%;
+
+	background-color: #ADD6FF;
+}
+
+object.main_logo {
+
+}
+
+#test {
+	text-align: center;
+}
+
+
+/* Borders can be used for many things. They can be assigned a thickness
+	in px, or can be 'thin', 'medium' or 'thick'. They can have any color
+	and be
+		dotted
+		dashed
+		solid
+		double
+		groove
+		ridge
+		inset
+		outset
+	They are defined with 'border-width', 'border-style', 'border-color'.
+*/
+
+div.box {
+	width: 200px;
+	border: 1px solid black;
+	background: orange;
+}
+
+#column1 {
+	/* Float can be left, right or none. */
+	float: left;
+	width: 33%;
+}
+
+h1 {
+	font-size: 30px; 
+	font-family: arial;
+}
+
+h4 {
+	font-size: 15px; 
+	font-family: arial; 
+	color:green;
+	font-style: italic;
+}
+
+p {
+	font-size: 10px; 
+	font-family: Verdana, Geneva, sans-serif;
+	text-align: justify;
+	/*
+	text-decoration: ;
+	letter-spacing: ;
+	text-indent: ;
+	text-transform:	;
+		may be any of 'capitalize', 'uppercase', 'lowercase', 'none'
+	*/
+}
+
+a:link {
+	color: blue;
+}
+
+a:visited {
+	color: red;
+}
+
+a:hover {
+	color: orange;
+}
+
+/* An active link is one which the user has mouse down action over. */
+a:active {
+	background-color: red;
+}
+
+a.top_menu_button {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 100px;
+}
+
+/* This will make the specific item of id c1-2 colored red. */
+#c1-2 {
+	color: red;
+}
+
+#copyright {
+	text-align: center;
+}
+
+/* If you assign 'class="whitewine"' to an html object under the 'a'
+	tag, it will assume this property. */
+a.whitewine {
+	color: green;
+}
+
+/* Span is also a tag, and you can assign class to it to give text
+	properties.
+
+	Span is used WITHIN a block level assignment. */
+span.benefit {
+	color: red;
+}
+
+/* Div is used to GROUP one or more block-level elements */
+div.menu {
+	background: yellow;
+}

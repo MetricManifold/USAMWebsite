@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<!-- Tutorial website test page -->
+<!-- Created July 11, 2015 -->
+
+<html>
+
+<!-- The head of the page has descriptive elements and CSS declarations -->
+<head>
+	<title>
+		USAM Home
+	</title>
+
+	<!-- Adds the icon to the tab bar -->
+	<link rel = "shortcut icon" href = "favicon.ico">
+
+
+
+	<meta name = "description" content = "Western Applied Math Society"> 
+	<meta name = "keywords" content = "Applied, Math, Society, Western, USAM, UWO"> 
+	<meta name = "author" content = "USAM">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+	<meta charset = "UTF-8">
+
+	<link rel = "stylesheet" type = "text/css" href = "template.css" />
+</head>
+
+<!-- The body is the body of the page -->
+<body>
+
+	<header>
+		<div class = "top_bar">
+			<span>
+				<object class = "main_logo" data = "res/USAM_logo_6.svg" alt = "USAM Logo" align = "center" width = "300px" type = "image/svg+xml"></object>
+			</span>
+		</div>
+		<div class = "top_menu">
+			<span class = "top_button_menu">
+				<table align = "center">
+					<tr>
+						<td><a class = "top_menu_button">button 1</a></td>
+						<td><a class = "top_menu_button">button 2</a></td>
+					</tr>
+				</table>
+			</span>
+		</div>
+	</header>
+
+
+
+	<div class = "content">
+
+
+		<!-- USAM LOGO -->
+		
+
+			<h1>
+				Home
+			</h1>
+			<p>
+				<a href = "http://www.apmaths.uwo.ca/">
+					Applied Math Home Page
+				</a>
+			</p>
+
+			<p style = "padding: 25px; border: 1px solid blue;">
+				CSS TEST
+			</p>
+
+			<!-- The use of classes, such as 'class = "fancy"' below, are for CSS -->
+			<article class = "fancy"> 		
+				<h1>
+					My Blog Entry
+				</h1> 		
+				<p>
+					This blog entry is my first.
+				</p>
+				<section> 			
+					<h2>
+						What I Learned
+					</h2>
+					<p>
+						HTML5 can have articles and sections.
+					</p>
+				</section>
+			</article>
+
+			test <br>
+
+			<!-- IDs are used for javascript -->
+			<button id = "play1" onclick = "play();">
+				<image src = "play_button.png"/>
+			</button> 
+
+			<!-- By convention, links, either <a> or <link>, should have a rel tag -->
+			<a rel = "next" href = "agenda.html">
+				Second Page
+			</a>
+
+			<form action = "agenda.html" method = "get">
+				Name: <input type = "text" name = "name"><br>
+				University: <input type = "text" name = "university"><br>
+				<input type = "submit" value = "Submit">
+			</form>
+
+			<!-- SVG graphics OP! ... use these to make selection boxes and menus -->
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+				<circle cx="100" cy="50" r="40" stroke="red"  stroke-width="2" fill="blue" /> 
+			</svg> 
+
+			<!-- Calling a script -->
+			<button onclick = "funcname()"> GO! </button>
+
+			<!-- Like button... -->
+			<p>
+				<button onclick = "clickCounter()" type = "button">Like!</button>
+			</p>
+			<div id = "result"></div>
+		</div>
+
+
+
+		<footer>
+			<p id = "copyright"> 
+				Copyright © 2015 All Rights
+			</p>
+
+			<!-- Scripts should usually go in the footer, before the /body tag -->
+			<script src = "script.js"/>
+		</footer>
+
+	</body>
+
+	</html>
