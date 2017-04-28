@@ -1,44 +1,35 @@
 
 h1 { 
-	width: 100%; 
 
 	font-family: 'Segoe UI', Arial, sans-serif;
-	/*font-family: Arial, Helvetica, sans-serif;*/
-	font-size: 36px;
-	font-weight: bold;
-	text-transform: uppercase;
+	font-size: 24px;
 	text-align: center;
-	text-shadow: -1px 0px red, -2px 0px black;
+	font-style: italic;
+	color: #b73838;
 
-	letter-spacing: 3px;
-
-	padding: 10px 0;
-	margin-bottom: 0px;
-	margin-top: -1px;
-
-	box-shadow: 0 0 20px gray;
-	background-color: #FAFAFA;
-
+	margin: 0;
+	padding: 0;
 }
 
 h2 { 
-	padding: 5px 5px 0px 40px;
-	margin-left: -50px;
-	width: 120%;
+	margin: 0;
+	padding: 0;
 
-	font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+	margin-left: 80px;
+	padding-bottom: 10px;
+
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 18px;
-	font-weight: normal;
 	text-transform: uppercase;
 	text-align: left;
 	letter-spacing: 1px;
 
-	box-shadow: 0px 5px 15px -11px rgba(0,0,0,0.75);
-	/*border-bottom: 4px solid #CCCCCC;*/
-	
+	border-bottom: 2px dotted gray;
 }
 
 h3 { 
+	margin: 0;
+
 	font-family: Arial, Helvetica, sans-serif;
 	text-align: center; 
 	margin-bottom: 20px;
@@ -55,15 +46,14 @@ h4 {
 
 
 div.bodytext {
-	box-shadow: 0px -10px 0px white, 0px 10px 0px white, -10px 0px 0px white, 2px 0px 8px lightgray;
-	width: 100%;
 }
 
 p {
-	padding-right: 40%;
+	margin: 10px 0 10px 10%;
 	font-size: 12px; 
 	font-family: Verdana, Geneva, sans-serif;
 	text-align: justify;
+	width: 60%;
 
 	line-height: 1.6;
 }
@@ -97,27 +87,4 @@ a:hover {
 /* An active link is one which the user has mouse down action over. */
 a:active {
 
-}
-
-@media only screen and (max-width: 1000px) {
-	p {
-		padding: 0px;
-	}
-
-	h1 {
-		margin-top: -100px;
-	}
-
-	h2 {
-		margin-left: -30px;
-		width: 100%;
-		padding-left: 30px;
-	}
-
-	div.bodytext {
-		box-shadow: none;
-	}
-}
-
-@media only screen and (max-width: 1000px) {
 }

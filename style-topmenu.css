@@ -1,197 +1,117 @@
 div.top_bar {
-	position: fixed;
-	display: table;
+	border-top: 4px solid black;
 	width: 100%;
-	top: -20px;
-	left: 0px;
-	min-width: 800px;
-	
-	padding-top: 30px;
-	padding-bottom: 5px;
-
-	background-color: #999999;
-
-	z-index: 620;
+	margin-top: -8px;
+	z-index: 100;
 }
 
-div.top_element {
-	display: table-cell;
-	vertical-align: middle;
+div.top_bar_inside {
+	display: flex;
+	align-items: center;
+
 }
 
-span.USAM_title {
+div.menu_bar {
+	border-top: 2px solid black;
+	width: 100%;
+	background-color: #4b4d66;
+
+}
+
+div.menu_bar_inside {
+	display: flex;
+	align-items: center;
+	width: 800px;
+	margin: 0 auto;
+	padding: 5px;
+
+}
+
+a.menu_box {
 	display: block;
-	width: 400px;
+	width: 100px;
+	padding: 5px;
+	background: #e0574a;
+
 	margin: 0 auto;
 
+	border-radius: 0 10px 0 10px;
+	text-decoration: none;
+}
+
+p.menu_text {
+	padding: 0;
+	margin: 0;
 	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	letter-spacing: 4px;
-	font-weight: normal;
-	color: #FFFFFF;
-}
-
-span.USAM_logo {
-	padding-left: 15px;
-}
-
-div.western_logo {
-	position: relative;
-}
-
-a.top_main_link {
-	text-decoration: none;
-	font-style: normal;
-	font-size: 10px;
-	font-family: Verdana, Geneva, sans-serif;
-}
-
-a.top_main_link:hover {
-	color: red;
-}
-
-a.selected {
-	box-shadow: 0px -8px 6px -6px red inset;
-}
-
-table.center {
-	margin-left: auto;
-	margin-right: auto;
-}
-
-div.top_menu_back {
-	position: absolute;
 	width: 100%;
-	margin-left: -8px;
-	margin-top: -30px;
-	min-width: 1000px;
-	
-	border-top-width: 2px;
-	border-top-style: solid;
-	border-top-color: black;
-
-	z-index: 200;
-}
-
-div.top_menu_front {
-	display: table;
-	margin: 0 auto;
-	width: 100%;
-
-	background: linear-gradient(#666666, #A3A3A3);
-	z-index: 110;
-}
-
-a.top_menu_button {
-	padding: 5px 32px;
-
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	text-decoration: none;
 	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-size: 14px;
-
 	color: white;
 }
 
-a.top_menu_button:hover {
-	color: black;
-	background: red;
-	opacity: 0.4;
-
-	transition: opacity 0.2s;
+a.menu_box:hover {
+	background-color: #d64c40;
 }
 
-td.top_menu_box {
-	position: relative;
+
+div.title {
+	width: 796px;
+	margin: 5px 2px;
+	border-radius: 0 0 10px 10px;
+	border-right: 2px solid black;
+	border-left: 2px solid black;
+}
+
+p.title_text_top {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: italic;
+
 	text-align: center;
+	width: 100%;
 
-	padding-top: 5px;
-	padding-bottom: 5px;
+	color: white;
 
-	border-left: 1px solid black;
-	border-right: 1px solid black;
-
-	text-shadow: 0px 0px 2px black;
+	margin: 0;
 }
 
-td.top_menu_box:hover ul {
-	display: table;
-	opacity: 1;
-	visibility: visible;
+p.title_text_bottom {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+
+	text-align: center;
+	width: 100%;
+
+	text-shadow: 1px 0 navy;
+	color: white;
+
+	margin: 0;
 }
 
-ul.dropdown {
-	padding: 0;
-	position: absolute;
-	top: 16px;
-	left: 0;
-	width: 150px;
-	box-shadow: none;
-	display: none;
-	opacity: 0;
-	visibility: hidden;
-	margin-left: 0;
-
-	box-shadow: 0 0 4px gray;
+div.usam {
+	flex: 1;
 }
 
-ul.dropdown li {
-	background: #4C4C4C; 
+div.western {
+	flex: 1;
+}
+
+img.western_logo {
+	height: 90px;
+	padding: 5px;
 	display: block;
-	padding: 10px 10px 10px 20px;
+	margin: auto;
 
-	text-align: left;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-
-	color: #fff;
+	border-radius: 5px;
 }
 
-ul.dropdown li:hover {
-	background: #949494;
-}
+img.usam_logo {
+	height: 100px;
+	padding: 5px;
+	display: block;
+	margin: auto;
 
-@media only screen and (max-width: 1000px) {
-	div.top_bar {
-		position: relative;
-		min-width: 0;
-	}
-	span.USAM_title {
-		width: 0;
-		font-size: 0px;
-	}
-	a.top_main_link {
-		width: 0;
-		font-size: 0;
-	}
-	div.top_menu_back {
-		position: relative;
-		min-width: 0;
-		width: 100%;
-		margin: -20px 0;
-	}
-	td.top_menu_box {
-		padding: 0;
-		padding-bottom: 2px;
-	}
-	a.top_menu_button {
-		padding: 0px 10px;
-		font-size: 11px;
-	}
-	a.top_menu_button:hover {
-		padding: 10px 2px;
-		padding-bottom: 4px;
-	}
-	td.top_menu_box:hover ul {
-		display: none;
-	}
-
-
-}
-
-@media only screen and (max-width: 480px) {
-	a.top_menu_button {
-		padding: 2px;
-	}
+	border-radius: 5px;
 }
