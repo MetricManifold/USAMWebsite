@@ -3,51 +3,53 @@ html {
 }
 
 body {
-	background: linear-gradient(#c1c4ff, #6269fc);
+	background: linear-gradient(#959abc, #959abc);
 	min-width: 800px;
+	
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	padding: 145px 0 30px 0;
+}
+
+img.home_picture {
+	display: block; 
+	margin: -10px auto 10px auto;
+	width:;
 }
 
 div.content_back {
-	width: 800px;
-	margin: 0 auto;
-	height: 100%;
-}
-
-div.content_head {
-	background-color: #FFFFFF;
-	padding: 5px 0;
-
-	margin-bottom: 2px;
-	z-index: -1;
+	display: flex;
+	min-height: 100%;
+	margin: 5px;
 }
 
 div.content_main {
+
+	width: 800px;
+	align-items: stretch;
+	margin: 0 auto;
+
 	background-color: #FFFFFF;
 	padding: 20px 0 20px 0;
-	height: 100%;
 }
 
-div.footer_bar {
-	display: flex;
-	width: 100%;
-	background-color: #4b4d66;
+
+img.facebook {
+	height: 20px;
+	width: auto;
+
+	padding: 0 5px;
 }
-
-div.footer_col {
-	flex: 1;
-}
-
-/*
-	*
-	*	Additional practical classes
-	*
-	*/
-
 
 .fine_print {
 	font-size: 10px;
 	text-align: center;
 	line-height: 1.0;
+	vertical-align: middle;
 	color: white;
 }
 

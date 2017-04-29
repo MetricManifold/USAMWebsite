@@ -1,20 +1,55 @@
 div.top_bar {
-	border-top: 4px solid black;
-	width: 100%;
-	margin-top: -8px;
-	z-index: 100;
+	width: 65%;
+	min-width: 840px;
+	margin: -153px auto 0 auto;
+
+	background: #2522c1;
+	border-radius: 0 0 20px 20px;
+	height: 145px;
+
+
 }
 
 div.top_bar_inside {
 	display: flex;
 	align-items: center;
+	width: 98%;
+	margin: 0 auto;
+
+	background: #ffffff;
+	border-radius: 0 0 10px 10px;
+}
+
+div.usam {
+	flex: 1;
+}
+
+div.western {
+	flex: 1;
+}
+
+img.western_logo {
+	max-height: 70px;
+	width: auto;
+	display: block;
+	margin: auto 20px;
 
 }
 
+img.usam_logo {
+	height: 100px;
+	padding: 5px;
+	display: block;
+	margin: auto;
+
+	border-radius: 5px;
+}
+
+
 div.menu_bar {
-	border-top: 2px solid black;
 	width: 100%;
-	background-color: #4b4d66;
+	background: linear-gradient(#2522c1, #020075);
+	border-radius: 0 0 20px 20px;
 
 }
 
@@ -23,19 +58,16 @@ div.menu_bar_inside {
 	align-items: center;
 	width: 800px;
 	margin: 0 auto;
-	padding: 5px;
 
 }
 
 a.menu_box {
 	display: block;
 	width: 100px;
-	padding: 5px;
-	background: #e0574a;
+	padding: 8px;
+	background: linear-gradient(#3c49fc, #111dc4);
 
 	margin: 0 auto;
-
-	border-radius: 0 10px 0 10px;
 	text-decoration: none;
 }
 
@@ -49,69 +81,23 @@ p.menu_text {
 }
 
 a.menu_box:hover {
-	background-color: #d64c40;
+	background: linear-gradient(#3c49fc, #9a9fed);
 }
 
 
-div.title {
-	width: 796px;
-	margin: 5px 2px;
-	border-radius: 0 0 10px 10px;
-	border-right: 2px solid black;
-	border-left: 2px solid black;
+div.footer_bar {
+	min-width: 840px;
+	border-radius: 10px;
+	display: flex;
+	width: 65%;
+	background: linear-gradient(#2522c1, #020075);
+
+	height: 30px;
+	margin: 0 auto -30px auto;
+	z-index: 2;
 }
 
-p.title_text_top {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 16px;
-	font-weight: bold;
-	font-style: italic;
-
-	text-align: center;
-	width: 100%;
-
-	color: white;
-
-	margin: 0;
-}
-
-p.title_text_bottom {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 20px;
-	font-weight: bold;
-	font-style: italic;
-
-	text-align: center;
-	width: 100%;
-
-	text-shadow: 1px 0 navy;
-	color: white;
-
-	margin: 0;
-}
-
-div.usam {
+div.footer_col {
+	z-index: 2;
 	flex: 1;
-}
-
-div.western {
-	flex: 1;
-}
-
-img.western_logo {
-	height: 90px;
-	padding: 5px;
-	display: block;
-	margin: auto;
-
-	border-radius: 5px;
-}
-
-img.usam_logo {
-	height: 100px;
-	padding: 5px;
-	display: block;
-	margin: auto;
-
-	border-radius: 5px;
 }
