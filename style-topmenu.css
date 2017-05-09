@@ -87,7 +87,7 @@ a.menu_box:hover {
 
 div.footer_bar {
 	min-width: 840px;
-	border-radius: 10px;
+	border-radius: 20px 20px 0 0;
 	display: flex;
 	width: 65%;
 	background: linear-gradient(#2522c1, #020075);
